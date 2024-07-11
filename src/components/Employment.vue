@@ -6,8 +6,8 @@ defineProps({
 
 <template>
   <div class="employment">
-    <h2>{{ job.position }}</h2>
-    <p class="company-name">{{ job.company }}</p>
+    <h2>{{ job?.position }}</h2>
+    <p class="company-name">{{ job?.company }}</p>
   </div>
 </template>
 
