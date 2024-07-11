@@ -32,3 +32,5 @@ jobs:
         aws-region: us-east-2
     - name: Sync S3 Bucket
       run: aws s3 sync dist/ ${{ secrets.S3_BUCKET }} --delete
+    - name: Clear Cloudfront cache
+      run: aws cloudfront create-invalidation --distribution-id ${{ secrets.CLOUDFRONT_ID }} --paths "/*"
