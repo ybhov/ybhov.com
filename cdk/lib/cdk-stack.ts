@@ -66,7 +66,7 @@ export class CdkStack extends cdk.Stack {
     githubIamUser.addToPolicy(new cdk.aws_iam.PolicyStatement({
       effect: cdk.aws_iam.Effect.ALLOW,
       actions: ['cloudfront:CreateInvalidation'],
-      resources: ["*"],//note: should figure out how to restrict this to the CloudFront distribution
+      resources: [`arn:aws:cloudfront::${this.account}:distribution/${cloudFrontDistribution.distributionId}`],
     }));
 
     // Create Aaaa record in Route53 to point to the CloudFront
