@@ -28,3 +28,11 @@ coverage
 *.sw?
 
 *.tsbuildinfo
+
+#CDK Specific Items
+*cdk.out
+*.cdk.staging
+cdk/*.js
+cdk/!jest.config.js
+cdk/*.d.ts
+cdk/node_modules

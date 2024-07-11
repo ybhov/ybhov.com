@@ -1,16 +1,16 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
+import { RouterView } from 'vue-router'
 import AppHeader from './components/AppHeader.vue'
 import AppFooter from './components/AppFooter.vue'
 import NavBar from './components/NavBar.vue'
-import Ian from './components/Ian.vue'
+import IanItem from './components/IanItem.vue'
 </script>
 
 <template>
   <AppHeader />
   <div class="page-wrapper">
     <section class="left-section">
-      <Ian />
+      <IanItem />
     </section>
     <section class="right-section">
       <div class="top-part">
