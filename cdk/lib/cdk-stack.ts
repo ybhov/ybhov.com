@@ -32,7 +32,7 @@ export class CdkStack extends cdk.Stack {
     }));
 
     // Create an access key for the GitHub Actions IAM user
-    const githubIamAccessKey = new cdk.aws_iam.CfnAccessKey(this, 'YbhovUIGitHubUserAccessKey', {
+    new cdk.aws_iam.CfnAccessKey(this, 'YbhovUIGitHubUserAccessKey', {
       userName: githubIamUser.userName,
     });
 
@@ -61,6 +61,13 @@ export class CdkStack extends cdk.Stack {
         aliases: ['ybhov.com'],
       }),
     });
+
+    // Grant the GitHub Actions IAM user access to the CloudFront distribution
+    githubIamUser.addToPolicy(new cdk.aws_iam.PolicyStatement({
+      effect: cdk.aws_iam.Effect.ALLOW,
+      actions: ['cloudfront:CreateInvalidation'],
+      resources: ["*"],//note: should figure out how to restrict this to the CloudFront distribution
+    }));
 
     // Create Aaaa record in Route53 to point to the CloudFront
     new cdk.aws_route53.AaaaRecord(this, 'ybhovARecord', {
