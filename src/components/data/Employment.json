@@ -1,0 +1,37 @@
+[
+  {
+    "company": "Sharpen",
+    "position": "Software Engineer Team Lead",
+    "startDate": "June 2024",
+    "endDate": "Current",
+    "description": "- Managed team of 4 engineers with responsibility for 3 different product lines\n - Evaluated incoming Jira tickets to assess priority and provide time estimates for completion\n - Engineered real time notification system to allow alerting on events within active calls (ExpressJS, Redis, MongoDB)"
+  },
+  {
+    "company": "Sharpen",
+    "position": "Software Engineer II",
+    "startDate": "Oct 2023",
+    "endDate": "May 2024",
+    "description": "- Lead migration and upgrade of 70+ legacy applications from various on premise data centers to multiple AWS ECS regions utilizing Docker and AWS CDK\n - Implemented standardized CI/CD practices company-wide using CircleCI\n - Aided in backend development for new product (ExpressJS, TypeScript), advancing it from Beta to GA\n - Developed custom ExpressJS application with RESTful endpoints for real-time customer updates, leveraging Redis\n"
+  },
+  {
+    "company": "Plum Voice",
+    "position": "Senior Software Engineer",
+    "startDate": "Mar 2023",
+    "endDate": "Sep 2024",
+    "description": "- Primary engineer on core web and voice processing application (PHP/JS)\n - Shipped 20+ releases upgrading customers web and voice experience with minimal service disruption\n - Contributed to AI product development on a modern stack (Python FastAPI)\n - Coordinated and ran code review meeting among team members to ensure company and industry best practices were being met in a relaxed collaborative environment\n"
+  },
+  {
+    "company": "Plum Voice",
+    "position": "Software Engineer",
+    "startDate": "Sep 2021",
+    "endDate": "Feb 2023",
+    "description": "- Engineered multiple features for core voice application, integrating live with AWS DynamoDB, AWS S3, AWS Polly, and Google Dialogflow (PHP).\n - Redesigned and optimized logs database with PostgreSQL, enhancing capacity and query speed.\n - Contributed to core application upgrade from PHP5.3 to PHP7\n"
+  },
+  {
+    "company": "Plum Voice",
+    "position": "Junior Software Engineer",
+    "startDate": "Sep 2020",
+    "endDate": "Aug 2021",
+    "description": "- Designed and coded RESTful API endpoints, enhancing customer control and accelerating information retrieval for applications.\n- Architected and developed custom PHP voice applications per customer specifications."
+  }
+]

@@ -9,7 +9,7 @@
         <img alt="X Link" class="logo-links" src="@/assets/x-black.png" />
       </a>
       <a :href="'https://linkedin.com/in/ianhovde'" target="_blank">
-        <img alt="X Link" class="logo-links" src="@/assets/linkedin-logo.png" />
+        <img alt="X Link" class="logo-links" src="@/assets/linkedin-logo-bl.png" />
       </a>
     </div>
   </header>

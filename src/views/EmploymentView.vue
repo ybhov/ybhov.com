@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import EmploymentItem from '../components/EmploymentItem.vue'
-import workHistory from '../components/Employment.json'
+import workHistory from '../components/data/Employment.json'
 </script>
 
 <template>
