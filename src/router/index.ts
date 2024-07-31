@@ -9,16 +9,16 @@ const router = createRouter({
       name: 'employment',
       component: EmploymentView
     },
-    {
-      path: '/crypto',
-      name: 'crypto',
-      component: () => import('../views/CryptoView.vue')
-    },
-    {
-      path: '/projects',
-      name: 'projects',
-      component: () => import('../views/ProjectsView.vue')
-    }
+    // {
+    //   path: '/crypto',
+    //   name: 'crypto',
+    //   component: () => import('../views/CryptoView.vue')
+    // },
+    // {
+    //   path: '/projects',
+    //   name: 'projects',
+    //   component: () => import('../views/ProjectsView.vue')
+    // }
   ]
 })
 
