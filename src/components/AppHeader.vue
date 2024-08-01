@@ -2,7 +2,7 @@
   <header>
     <h1>ybhov</h1>
     <div>
-      <a :href="'https://github.com/ianhovde'" target="_blank">
+      <a :href="'https://github.com/ybhov'" target="_blank">
         <img alt="Github Link" class="logo-links" src="@/assets/github-mark.svg" />
       </a>
       <a :href="'https://twitter.com/ybhov19'" target="_blank">
