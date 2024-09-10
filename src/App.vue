@@ -43,4 +43,26 @@ import IanItem from './components/IanItem.vue'
 .top-part {
   border-bottom: 0.25rem solid var(--color-border);
 }
+
+@media (max-width: 768px) {
+  .page-wrapper {
+    flex-direction: column;
+  }
+
+  .left-section {
+    border-right: none;
+    border-bottom: 0.25rem solid var(--color-border);
+    width: 100%;
+    padding-right: 0;
+    padding-bottom: 2rem;
+  }
+
+  .right-section {
+    width: 100%;
+  }
+
+  .top-part {
+    border-bottom: none;
+  }
+}
 </style>
