@@ -38,4 +38,15 @@ h1 {
   margin-bottom: 0.25rem;
   margin-top: 0.25rem;
 }
+
+@media (max-width: 768px) {
+  .logo-links {
+    height: 6vw;
+    padding-right: 4vw;
+  }
+
+  h1 {
+    padding-left: 2vw;
+  }
+}
 </style>

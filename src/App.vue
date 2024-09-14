@@ -32,12 +32,12 @@ import IanItem from './components/IanItem.vue'
 
 .left-section {
   border-right: 0.25rem solid var(--color-border);
-  width: 30%;
+  width: 350px;
   padding-right: 2rem;
 }
 
 .right-section {
-  width: 70%;
+  flex: 1; /* Flexible width */
 }
 
 .top-part {
@@ -59,10 +59,6 @@ import IanItem from './components/IanItem.vue'
 
   .right-section {
     width: 100%;
-  }
-
-  .top-part {
-    border-bottom: none;
   }
 }
 </style>
