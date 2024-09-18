@@ -1,8 +1,6 @@
 <template>
   <nav class="nav-bar">
     <RouterLink to="/" class="nav-link">Employment</RouterLink>
-    <!-- <RouterLink to="/projects" class="nav-link">Projects</RouterLink> -->
-    <!-- <RouterLink to="/crypto" class="nav-link">Crypto</RouterLink> -->
   </nav>
 </template>
 
@@ -17,5 +15,10 @@
 .nav-link {
   margin-left: 2rem;
   text-decoration: none;
+  color: inherit;
+}
+
+.nav-link:hover {
+  font-style: italic;
 }
 </style>
