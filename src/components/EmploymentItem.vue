@@ -5,8 +5,8 @@ const props = defineProps({
 })
 
 const formattedDescription = computed(() => {
-  return props.job?.description.replace(/\n/g, '<br>');
-});
+  return props.job?.description.replace(/\n/g, '<br>')
+})
 </script>
 
 <template>
@@ -21,8 +21,7 @@ const formattedDescription = computed(() => {
 </template>
 
 <style>
-
-.employment h2{
+.employment h2 {
   margin-bottom: 0;
 }
 .employment p {
