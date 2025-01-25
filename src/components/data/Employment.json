@@ -4,21 +4,21 @@
     "position": "Software Engineer Team Lead",
     "startDate": "June 2024",
     "endDate": "Current",
-    "description": "- Managed team of 4 engineers with responsibility for 3 different product lines\n - Evaluated incoming Jira tickets to assess priority and provide time estimates for completion\n - Engineered real time notification system to allow alerting on events within active calls (ExpressJS, Redis, MongoDB)"
+    "description": "- Led the migration and upgrade of a multi-million dollar application stack with 70+ applications, transitioning from on-premises data centers to multiple AWS regions\n - Utilized Docker, Bitbucket Pipelines, and AWS CDK to establish a PCI-compliant and fully redundant environment, ensuring scalability and reliability\n - Managed a team of 5 engineers across 3 product stacks, facilitating standups, bi-weekly one-on-ones, and performance reviews to drive team alignment and individual growth\n - Reviewed and approved pull requests to ensure high code quality and compliance with security standards, safeguarding sensitive data including PCI and HIPAA information\n"
   },
   {
     "company": "Sharpen",
     "position": "Software Engineer II",
     "startDate": "Oct 2023",
     "endDate": "May 2024",
-    "description": "- Lead migration and upgrade of 70+ legacy applications from various on premise data centers to multiple AWS ECS regions utilizing Docker and AWS CDK\n - Implemented standardized CI/CD practices company-wide using CircleCI\n - Aided in backend development for new product (ExpressJS, TypeScript), advancing it from Beta to GA\n - Developed custom ExpressJS application with RESTful endpoints for real-time customer updates, leveraging Redis\n"
+    "description": "- Implemented company-wide adoption of CI/CD pipelines using Bitbucket Pipelines\n - Aided in backend development for a new customer facing product (ExpressJS, TypeScript), advancing it from Beta to GA\n - Managed and executed all legacy production releases, ensuring stability and adherence to test plans\n - Evaluated incoming Jira tickets to assess priority and provide time estimates for completion\n"
   },
   {
     "company": "Plum Voice",
     "position": "Senior Software Engineer",
     "startDate": "Mar 2023",
     "endDate": "Sep 2024",
-    "description": "- Primary engineer on core web and voice processing application (PHP/JS)\n - Shipped 20+ releases upgrading customers web and voice experience with minimal service disruption\n - Contributed to AI product development on a modern stack (Python FastAPI)\n - Coordinated and ran code review meeting among team members to ensure company and industry best practices were being met in a relaxed collaborative environment\n"
+    "description": "- Primary engineer on core web and voice processing application, utilized by the entire customer base, handling up to 10,000 concurrent connections during peak traffic (PHP/JS)\n - Shipped 20+ releases on a weekly cadence, enhancing customers’ web and voice experience with minimal service disruption\n - Contributed to AI product development on a modern stack (Python FastAPI)\n - Coordinated and ran code review meeting among team members to ensure company and data security best practices were being met in a relaxed collaborative environment\n"
   },
   {
     "company": "Plum Voice",
