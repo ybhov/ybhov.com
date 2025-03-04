@@ -27,3 +27,9 @@ jobs:
     - name: Run Cypress tests
       run: bun run test:e2e
       continue-on-error: false
+
+    - name: Coolify Deployment
+      run: |
+        curl -X POST http://coolify.ybhov.com/api/v1/deploy?uuid=zswcwckos0480w80wg8w8ccw&force=false \
+        --header 'Authorization: Bearer ${{ secrets.COOLIFY }}' \
+        --header 'Content-Type: application/json'
