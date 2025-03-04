@@ -30,4 +30,6 @@ jobs:
 
     - name: Coolify Deployment
       run: |
-        curl -X POST https://coolify.ybhov.com/api/v1/deploy?uuid=zswcwckos0480w80wg8w8ccw&force=false --header 'Authorization: Bearer ${{ secrets.COOLIFY }}' --header 'Content-Type: application/json'
+        curl -X POST "https://coolify.ybhov.com/api/v1/deploy?uuid=zswcwckos0480w80wg8w8ccw&force=false" \
+        -H "Authorization: Bearer ${{ secrets.COOLIFY }}" \
+        -H "Content-Type: application/json"
