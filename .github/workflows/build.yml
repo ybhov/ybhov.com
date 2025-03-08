@@ -28,8 +28,16 @@ jobs:
       run: bun run test:e2e
       continue-on-error: false
 
-    - name: Coolify Deployment
-      run: |
-        curl -X POST "https://coolify.ybhov.com/api/v1/deploy?uuid=zswcwckos0480w80wg8w8ccw&force=false" \
-        -H "Authorization: Bearer ${{ secrets.COOLIFY }}" \
-        -H "Content-Type: application/json"
+    - name: Configure AWS credentials
+      if: success()
+      uses: aws-actions/configure-aws-credentials@v2
+      with:
+        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        aws-region: us-east-2
+    - name: Sync S3 Bucket
+      if: success()
+      run: aws s3 sync dist/ ${{ secrets.S3_BUCKET }} --delete
+    - name: Clear Cloudfront cache
+      if: success()
+      run: aws cloudfront create-invalidation --distribution-id ${{ secrets.CLOUDFRONT_ID }} --paths "/*"
